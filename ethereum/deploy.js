@@ -3,8 +3,7 @@ const Web3 = require('web3');
 
 const compiledFactory = require('./build/CampaignFactory.json')
 
-const dotenv = require('dotenv');
-dotenv.load()
+const dotenv = require('dotenv').config({path: './../.env'});
 
 
 const provider = new HDWalletProvider(
