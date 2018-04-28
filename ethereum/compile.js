@@ -11,7 +11,7 @@ const buildPath = path.resolve(__dirname, 'build');
 // Delete the /ethereum/build folder so we can start fresh.
 fs.removeSync(buildPath);
 
-// Create a path to the Campaign.sol file.
+// Create a path to the Campaign.sol file. __dirname is the directory of the project.
 const campaignPath = path.resolve(__dirname, 'contracts', 'Campaign.sol');
 
 // Create a variable to the campaign source
